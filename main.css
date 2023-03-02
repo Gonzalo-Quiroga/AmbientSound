@@ -8,7 +8,7 @@ html, body {
 
 body {
     font-family: sans-serif;
-    background-image: url(/img/Background.jpg);
+    background-image: url(img/Background.jpg);
     background-size: 1920px 1400px;
     display: flex;
     justify-content: center;
