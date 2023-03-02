@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Headphones.png"/>
+    <!-- Primary Meta Tags -->
+    <title>Ambient Sound</title>
+    <meta name="title" content="Ambient Sound">
+    <meta name="description" content="Ambient Sound es un reproductor de sonidos ambientales en línea diseñado para ayudarlo a relajarse, concentrarse y desconectar sonidos desagradables de su entorno.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gonzalo-quiroga.github.io/AmbientSound/index.html">
+    <meta property="og:title" content="Ambient Sound">
+    <meta property="og:description" content="Ambient Sound es un reproductor de sonidos ambientales en línea diseñado para ayudarlo a relajarse, concentrarse y desconectar sonidos desagradables de su entorno.">
+    <meta property="og:image" content="https://i.postimg.cc/Y9nSV94W/Ambient-Sound.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gonzalo-quiroga.github.io/AmbientSound/index.html">
+    <meta property="twitter:title" content="Ambient Sound">
+    <meta property="twitter:description" content="Ambient Sound es un reproductor de sonidos ambientales en línea diseñado para ayudarlo a relajarse, concentrarse y desconectar sonidos desagradables de su entorno.">
+    <meta property="twitter:image" content="https://i.postimg.cc/Y9nSV94W/Ambient-Sound.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/31082bb303.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script> 
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="circle"></div>
+    <img class="headphones" src="img/Headphones.png" alt="Headphones">
+    
+
+    <!-- Guía -->
+    <p class="guia"><a href="index.html">Home</a> <a href="#description">Descripción</a> <a href="https://www.instagram.com/gonzaloquiroga7/" target="_blank">Contacto</a></p>
+
+    <!-- Player -->
+    <main class="player">
+        <!-- Background -->
+        <video src="" type="video/mp4" muted autoplay loop class="background" id="background" ></video>
+
+        <!-- Title -->
+        <h1 class="title" id="title">Ambient Sound</h1>
+
+        <!-- Cover -->
+        <img src="img/HeadphonesBlack.png" alt="" class="cover" id="cover">
+
+        <!-- Audio HTML Media element -->
+        <audio src="" id="audio"></audio>
+
+        <!-- Progress bar -->
+        <div id="progress-container" class="progress-container">
+            <section id="progress" class="progress"></section>
+        </div>
+
+        <!-- Controls -->
+        <section class="controls">
+            <button class="prev">
+                <i id="prev" class="fas fa-backward"></i>
+            </button>
+            <button class="play">
+                <i id="play" class="fas fa-play"></i>
+            </button>
+            <button class="next">
+                <i id="next" class="fas fa-forward"></i>
+            </button>
+        </section>
+
+        <!-- Song list-->
+        <ul class="songs" id="songs">
+            <!--<li><a href="#">Song 1</a></li>
+            <li><a class="ative" href="#">Song 2</a></li>
+            <li><a href="#">Song 3</a></li>-->
+        </ul>   
+    </main>
+
+    <!-- Description -->
+    <section class="description" id="description">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#001510" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,197.3C480,224,600,224,720,202.7C840,181,960,139,1080,133.3C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <div class="container-text">
+            <p class="text">Ambient Sound es un reproductor de sonidos ambientales en línea diseñado para ayudarlo a relajarse, concentrarse y desconectar sonidos desagradables de su entorno.<br><br>
+            El ruido de fondo puede distraer, o puede ser calmante, todo depende del tipo de sonido. El ruido de las olas en la playa, el suave golpeteo de la lluvia o el zumbido constante de una cascada en el bosque son sonidos que muchas personas encuentran relajantes. Incluso el lejano estruendo de truenos puede ser relajante cuando estás cómodo y seguro en el interior.<br><br> 
+            Pero otros tipos de ruido pueden ser distractores, irritantes o incluso estresantes: el martilleo desde el sitio de construcción al otro lado de la calle, el pisoteo de los vecinos en el apartamento de arriba, o el bajo golpeador de la fiesta afuera.<br><br>
+            Ambient Sound está diseñado para ayudarlo a ignorar el ruido molesto al reproducir sonidos ambientales para adaptarse a su entorno.<br><br>
+            Puedes escuchar los sonidos desde cualquier plataforma, con auriculares o parlantes y totalmente en linea.<br><br>
+            Elije tu sonido y relájate! :)
+            </p> 
+        </div>
+        
+
+       <!-- Desarrollador -->
+       <div class="desarrollador">
+        <p class="by">Desarrollado por: <a class="instagram" href="https://www.instagram.com/gonzaloquiroga7/" target="_blank">@gonzaloquiroga7</a></p>
+
+       <!-- Logo Footer -->
+        <div class="logo-footer">
+            <img class="headphones-footer" src="img/Headphones.png" alt="Headphones">
+            <h2 class="title-footer">Ambient Sound</h2>
+        </div>
+       </div>
+
+    </section>
+</body>
+
+</html>

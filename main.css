@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(../../img/Background.jpg);
+    background-size: 1920px 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circle */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    background-image: linear-gradient(#00bf8f, #001510);
+    border-radius: 50%;
+}
+
+/* Headphones */
+.headphones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 55px;
+    width: 100px;
+}
+
+/* Guía */
+.guia {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 55px;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    margin-right: 15px;
+}
+
+a:hover {
+    color: #00bf8f;
+}
+
+/* Player */
+.player {
+    margin-top: 70px;
+    min-width: 320px;
+    background-image: linear-gradient(#00bf8f, #001510);
+    border-radius: 20px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 5px 5px 3px black;
+}
+
+/* Background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Title */
+.title {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Cover */
+.cover {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+/* Progress */
+.progress-container {
+    height: .6rem;
+    background-color: lightgray; 
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.progress {
+    background-color: black;
+    width: 0;
+    height: 100%;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controls i {
+    font-size: 1.7rem;
+    color: white;
+}
+
+/* Songs */
+.songs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.songs li {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.songs a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.songs a:hover {
+    color: white;
+}
+
+.songs a.active {
+    color: white;
+    font-weight: bold;
+}
+
+/* Description */
+.description {
+    position: absolute;
+    width: 100%;
+    top: 800px;
+}
+
+/* Text */
+.container-text {
+    margin-top: -5px;
+    width: 100%;
+    background-color: #001510;
+}
+
+.text {
+    width: 60%;
+    color: gray;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Desarrollador */
+.desarrollador {
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #001510;
+}
+
+.by {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Logo Footer */
+.logo-footer {
+    text-align: center;
+}
+
+.headphones-footer {
+    width: 90px;
+}
+
+.title-footer {
+    color: white;
+}
+
+/*--------------RESPONSIVE-------------*/
+
+/*19 pulgadas*/
+
+@media screen and (max-width: 1366px) {
+    .player {
+        margin-top: 100px;
+    }
+    
+    .background {
+        height: 132%;
+    }
+
+    .container-text {
+        margin-top: -55px;
+    }
+
+    .text {
+        width: 80%;
+        margin-top: 50px;
+    }
+  }
+  
+  /*17 pulgadas*/
+  
+  @media screen and (max-width: 1280px) {
+    .headphones {
+        top: -15px;
+    }
+
+    .circle {
+        top: -15px;
+    }
+
+    .guia {
+        margin-right: 25px;
+    }
+    
+    .player {
+        margin-top: 100px;
+    }
+
+    .background {
+        height: 138%;
+    }
+
+    .text {
+        width: 80%;
+        margin-top: 50px;
+    }
+  }
+  
+  /*14 pulgadas*/
+  
+  @media screen and (max-width: 1024px) {
+    .headphones {
+        top: -15px;
+    }
+
+    .circle {
+        top: -15px;
+    }
+
+    .guia {
+        margin-right: 15px;
+    }
+
+    .player {
+        margin-top: 120px;
+    }
+    
+    .background {
+        height: 125%;
+    }
+
+    .container-text {
+        margin-top: -65px;
+    }
+
+    .text {
+        width: 80%;
+        margin-top: 50px;
+    }  
+  }
+  
+  /*Celular*/
+  
+  @media screen and (max-width: 1023px) {
+    .headphones {
+        transform: scale(0.5);
+        top: -50px;
+        left: -50px;
+    }
+
+    .circle {
+        transform: scale(0.5);
+        top: -50px;
+        left: -50px;
+    }
+
+    .guia {
+        margin: 30px 0;
+        font-size: 17px;
+    }
+
+    .player {
+        margin-top: 60px;
+        min-width: 280px;
+        padding: 15px;
+    }
+
+    .background {
+        height: 130%;
+    }
+
+    .description {
+        margin-top: 60px;
+    }
+
+    .text {
+        margin-top: 50px;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .desarrollador {
+        padding: 50px;
+    }
+
+    .logo-footer {
+        transform: scale(0.7);
+    }
+}
